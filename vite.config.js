@@ -1,10 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  css: {
-    devSourcemap: false // 禁用 CSS source maps
-  }
+  base: '/hexVue2025week2/', // 這裡要寫 repo 名稱
 })

@@ -1,5 +1,5 @@
 // src/router/index.ts (或 index.js)
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import { defineAsyncComponent } from 'vue'
 
 // 使用 defineAsyncComponent 進行動態導入
@@ -38,7 +38,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory('/hexVue2025week2/'),
   routes,
   scrollBehavior() {
     return { top: 0 }
